@@ -1,4 +1,4 @@
-# 💰 Contact directory App
+# 📱 Contact directory App
 
 The application allows to save, filter and delete contacts that a user adds.
 

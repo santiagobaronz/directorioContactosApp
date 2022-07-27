@@ -201,17 +201,22 @@ public class Contactoform extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         
-        String nombre,direccionpostal,correoelectronico;
-       String telefono;
-               nombre=jTextField2.getText();
-               telefono = jTextField3.getText();
-               direccionpostal=jTextField4.getText();
-               correoelectronico=jTextField5.getText();
-               
-        Contacto contacto = new Contacto(nombre, telefono, direccionpostal, correoelectronico);
-        listaContactos.add(contacto);
+        String nombre,direccionpostal,correoelectronico, telefono;
         
-        JOptionPane.showMessageDialog(null, "Contacto Guardado");
+        nombre=jTextField2.getText();
+        telefono = jTextField3.getText();
+        direccionpostal=jTextField4.getText();
+        correoelectronico=jTextField5.getText();
+               
+       if(nombre.length() != 0){
+            Contacto contacto = new Contacto(nombre, telefono, direccionpostal, correoelectronico);
+            listaContactos.add(contacto);
+            JOptionPane.showMessageDialog(null, "Contacto Guardado");
+        }else{
+           JOptionPane.showMessageDialog(null, "El nombre es obligatorio");
+       }
+               
+        
                
     }//GEN-LAST:event_jButton2ActionPerformed
 
