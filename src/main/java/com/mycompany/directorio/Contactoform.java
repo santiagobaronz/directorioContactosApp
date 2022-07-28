@@ -13,6 +13,17 @@ import javax.swing.JOptionPane;
  */
 public class Contactoform extends javax.swing.JFrame {
 
+public ArrayList<Contacto> listaContactos(){
+    return listaContactos;
+}
+
+public void agregarContacto ( String nombrec,String telefono,String direccionpostal,String correoelectronico){
+        Contacto nuevoContacto;
+        nuevoContacto=new Contacto(nombrec,telefono,direccionpostal,correoelectronico);
+
+        
+listaContactos.add(nuevoContacto);
+}
     private String Filtro;
 
     /**
@@ -196,7 +207,7 @@ public class Contactoform extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public static ArrayList<Contacto> listaContactos = new ArrayList<>();
+    static ArrayList<Contacto> listaContactos = new ArrayList<>();
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 

@@ -17,7 +17,7 @@ public class Contacto {
     String direccionpostal;
     String correoelectronico; 
     
-    ArrayList<Contacto> listaContactos= new ArrayList<>();//Llamamos al constructor
+    //Llamamos al constructor
     
     public Contacto( String nombrec, String telefono,String direccionpostal,String correoelectronico){
         
@@ -31,11 +31,9 @@ public class Contacto {
     public Contacto (){
         
         
-    }
     
-    public void agregarContacto ( String nombrec,String telefono,String direccionpostal,String correoelectronico){
-        Contacto nuevoContacto;
-        nuevoContacto=new Contacto(nombrec,telefono,direccionpostal,correoelectronico);
-        listaContactos.add(nuevoContacto);
+    
+    
+        
     }
 }

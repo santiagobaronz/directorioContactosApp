@@ -12,6 +12,10 @@ package com.mycompany.directorio;
 public class Directorio {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Contactoform otherpage = new Contactoform();
+        otherpage.setVisible(true);
+        
+        
     }
 }

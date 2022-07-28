@@ -29,7 +29,7 @@ public class listaContactos extends javax.swing.JFrame {
         jTextArea1.setText("");
         
         Contactoform form = new Contactoform();
-        ArrayList<Contacto> array = Contactoform.listaContactos;
+        ArrayList<Contacto> array = form.listaContactos;
         int numberOfResults = array.size();
 
         if(numberOfResults != 0){
@@ -58,7 +58,7 @@ public class listaContactos extends javax.swing.JFrame {
         listUsers.removeAllItems();
         
         Contactoform form = new Contactoform();
-        ArrayList<Contacto> array = Contactoform.listaContactos;
+        ArrayList<Contacto> array = form.listaContactos;
         int numberOfResults = array.size();
         
         for(int i = 0; i < numberOfResults; i ++){
@@ -194,7 +194,7 @@ public class listaContactos extends javax.swing.JFrame {
         String name = JOptionPane.showInputDialog("Nombre de la persona que desea buscar:");
         
         Contactoform form = new Contactoform();
-        ArrayList<Contacto> array = Contactoform.listaContactos;
+        ArrayList<Contacto> array = form.listaContactos;
         int numberOfResults = array.size();
 
         if(numberOfResults != 0){
@@ -225,7 +225,7 @@ public class listaContactos extends javax.swing.JFrame {
         
         String option = (String) listUsers.getSelectedItem();
         Contactoform form = new Contactoform();
-        ArrayList<Contacto> array = Contactoform.listaContactos;
+        ArrayList<Contacto> array = form.listaContactos;
         int numberOfResults = array.size();
         
         for(int i = 0; i < numberOfResults; i ++){
